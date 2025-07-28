@@ -1,5 +1,9 @@
 name: Test CI
 on: push
+
+permissions:
+  contents: write
+
 jobs:
   test:
     name: Test & Build
