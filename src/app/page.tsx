@@ -35,8 +35,10 @@ export default function Home() {
   ];
 
   return (
-    <div>
-      <ToDoList todos={defaultTodos} />
+    <div className="flex w-full items-center justify-center p-6">
+      <div className="w-full max-w-xl rounded-lg border border-zinc-200 p-4">
+        <ToDoList todos={defaultTodos} />
+      </div>
     </div>
   );
 }

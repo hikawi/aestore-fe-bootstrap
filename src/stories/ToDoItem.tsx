@@ -34,13 +34,17 @@ export function ToDoItem({
           type="checkbox"
           className={`m-0 size-4 appearance-none rounded-lg border border-cyan-700 duration-200 hover:bg-cyan-700/50 ${completed ? "bg-cyan-700" : "bg-white"}`}
           checked={completed}
-          onClick={onComplete}
+          onChange={onComplete}
         />
 
         {label}
       </label>
 
-      <button onClick={onFavorite} aria-checked={favorite}>
+      <button
+        onClick={onFavorite}
+        aria-checked={favorite}
+        aria-label="Favorite"
+      >
         {favorite ? (
           <svg
             xmlns="http://www.w3.org/2000/svg"
